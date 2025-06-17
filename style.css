@@ -54,9 +54,9 @@ header {
 /* Header end */
 
 /* Banner start */
-.banner-wrapper{
-    margin-top: 55.2px;
-    overflow: hidden;
+.banner-wrapper {
+  margin-top: 55.2px;
+  overflow-x: hidden;
 }
 .bg-images-wrap {
   position: relative;
@@ -119,50 +119,326 @@ header {
   color: white;
   text-shadow: 0 0 8px rgba(243, 243, 243, 0.8);
 }
-.innerH1{
-    font-style: italic;
+.innerH1 {
+  font-style: italic;
 }
-.BannerH1, .BannerPara, .BannerButton{
-    margin-bottom: 2rem;
+.BannerH1,
+.BannerPara,
+.BannerButton {
+  margin-bottom: 2rem;
 }
-.BannerPara{
-    font-size: 1rem;
+.BannerPara {
+  font-size: 1rem;
 }
-.BannerButton button{
-    padding: 0.5rem 2rem;
-    background-color: transparent;
-    color: white;
-    border-color: white;
-    font-size: 1rem;
-    
+.BannerButton button {
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.BannerButton button:hover {
+  transition: 0.5s;
+  color: black;
+  background-color: white;
 }
 /* Banner responsive site */
 
-@media (max-width: 1024px){
-    .text-wrap{
-        font-size: 1.5rem;
-    }
-    .BannerPara{
-        font-size: 0.7rem;
-    }
-    .BannerButton button{
-        font-size: 0.7rem;
-    }
+@media (max-width: 1024px) {
+  .text-wrap {
+    font-size: 1.5rem;
+  }
+  .BannerPara {
+    font-size: 0.7rem;
+  }
+  .BannerButton button {
+    font-size: 0.7rem;
+  }
 }
-@media (max-width: 768px){
-    .text-wrap{
-        font-size: 1.3rem;
-    }
+@media (max-width: 768px) {
+  .text-wrap {
+    font-size: 1.3rem;
+  }
 }
-@media (max-width: 485px){
-    .text-wrap{
-        font-size: 0.5rem;
-    }
-    .BannerPara{
-        transform: scaleX(0.85);
-    }
-    .BannerButton button{
-        font-size: 0.6rem;
-    }
+@media (max-width: 480px) {
+  .bg-image1,
+  .bg-image2,
+  .bg-image3 {
+    max-height: 30rem;
+  }
+  .text-wrap {
+    font-size: 0.5rem;
+    max-height: 30rem;
+  }
+  .BannerPara {
+    transform: scaleX(0.85);
+  }
+  .BannerButton button {
+    font-size: 0.6rem;
+  }
 }
 /* Banner end */
+
+/* AboutUs start */
+
+.aboutUs-wrapper {
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 226);
+  position: relative;
+  padding: 7rem 7rem;
+  color: rgb(44, 44, 44);
+}
+.heading1 {
+  margin-bottom: 2rem;
+}
+.heading1 h5 {
+  font-weight: 600;
+  font-size: 15px;
+}
+.heading2 h1 {
+  font-size: 3.3rem;
+}
+.italicHead {
+  font-style: italic;
+}
+.heading2 {
+  margin-bottom: 2rem;
+}
+.HeadingPara {
+  display: flex;
+  gap: 6rem;
+  color: rgb(95, 95, 95);
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+.HeadingPara-left {
+  text-align: justify;
+}
+.HeadingPara-right {
+  text-align: justify;
+}
+.column-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+}
+.column1 {
+  width: 50%;
+}
+.column2 {
+  width: 50%;
+}
+.vision-box h2 {
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+.vision-box p {
+  text-align: start;
+  font-size: 1.1rem;
+  color: rgb(95, 95, 95);
+}
+.vision-box {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+.mission-box {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+.mission-box h2 {
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+.mission-box ul {
+  font-size: 1.1rem;
+  color: rgb(95, 95, 95);
+  list-style: none;
+}
+.mission-box i {
+  color: black;
+}
+.black-box {
+  display: flex;
+  gap: 7rem;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+}
+.black-box-button button {
+  font-size: 0.9rem;
+  color: white;
+  transform: translateX(-3.5rem);
+  background-color: transparent;
+  padding: 0.5rem;
+  border-color: white;
+  transition: 0.5s;
+}
+.black-box-button button:hover {
+  transition: 0.5s;
+  color: black;
+  background-color: white;
+}
+.verticalImg {
+  overflow-x: hidden;
+}
+.verticalImg img {
+  max-width: 61%;
+  transform: scaleX(1.5) translateX(3.5rem);
+}
+.partners-wrap {
+  margin-top: 7rem;
+}
+.partners-heading {
+  margin-bottom: 3rem;
+}
+.partners-logo-wrap {
+  color: rgb(60, 60, 60);
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  animation: scroll-left 20s linear infinite;
+}
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.partners-logo-wrap:hover {
+  animation-play-state: paused;
+}
+
+/* AboutUs responsive site */
+@media (max-width: 1024px) {
+  .aboutUs-wrapper {
+    padding: 2rem;
+  }
+  .heading2 h1 {
+    font-size: 2.2rem;
+  }
+  .HeadingPara {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .column-wrapper {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .column1 {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  .verticalImg img {
+    max-height: 400px;
+    transform: scaleX(3) translateX(7.5rem);
+  }
+  .vision-box p br {
+    display: none;
+  }
+  .partners-wrap {
+    margin-top: 3.5rem;
+  }
+  .partners-logo-wrap {
+    height: 40px;
+  }
+  .black-box {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .aboutUs-wrapper {
+    padding: 2rem;
+  }
+  .heading2 h1 {
+    font-size: 3rem;
+  }
+  .HeadingPara {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .column-wrapper {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .column1 {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  .verticalImg img {
+    transform: scaleX(2) translateX(7rem);
+  }
+  .partners-wrap {
+    margin-top: 3rem;
+  }
+  .partners-logo-wrap {
+    height: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutUs-wrapper {
+    padding: 1rem;
+  }
+  .heading2 h1 {
+    font-size: 1.8rem;
+  }
+  .HeadingPara {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .column-wrapper {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .vision-box p {
+    text-align: center;
+  }
+  .column1 {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  .black-box {
+    font-size: 1.2rem;
+  }
+  .partners-wrap {
+    margin-top: 3rem;
+  }
+  .partners-logo-wrap {
+    height: 30px;
+  }
+}
+/* AboutUs end */
+
+/* Blog post start */
+
+.blog-post-wrapper{
+  background-color: rgb(206, 206, 110);
+  padding: 6rem;
+}
+.blog-post-heading{
+  margin-bottom: 2rem;
+}
+.subheading-flex-wrap{
+  display: flex;
+  gap: 10rem;
+}
+.subheading-para{
+  line-height: 1.5rem;
+}
+/* Blog post responsive site */
+
+/* Blog post end */
