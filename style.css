@@ -852,13 +852,13 @@ header {
   }
 
   .footer-img-wrap img {
-    width: 23rem;
-    height: 100%;
+    width: 18.5rem;
+    height: 20rem;
   }
 
   .newsLetterHead-wrap,
   .paraEmail-wrap {
-    left: -1rem;
+    left: -1.5rem;
     right: 0rem;
     padding: auto 3rem;
     padding-top: 10rem;
@@ -878,12 +878,12 @@ header {
   .paraEmail-wrap p {
     font-size: 1rem;
     margin-bottom: 1rem;
-    max-width: 330px;
+    max-width: 295px;
   }
 
   .paraEmail-wrap {
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.5rem;
   }
 
   .contact-details {
