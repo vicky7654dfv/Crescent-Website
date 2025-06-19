@@ -179,6 +179,7 @@ header {
     font-size: 0.6rem;
   }
 }
+
 /* Banner end */
 
 /* AboutUs start */
@@ -412,7 +413,7 @@ header {
     width: 100%;
   }
   .verticalImg img {
-    transform: scaleX(1.6) translateX(3.6rem);
+    transform: scaleX(1.6) translateX(3rem);
   }
   .black-box {
     font-size: 1.2rem;
@@ -423,6 +424,10 @@ header {
   .partners-logo-wrap {
     height: 30px;
   }
+}
+@media (max-width:425px){
+  
+
 }
 /* AboutUs end */
 
@@ -532,7 +537,7 @@ header {
     font-size: 1rem;
   }
   .subheading h1 {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     white-space: nowrap;
   }
   .subheading-para {
@@ -542,11 +547,13 @@ header {
     font-size: 1rem;
     height: 3rem;
     width: 8rem;
+    transform: translateX(-3rem);
   }
   .grid-wrapper {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 768px) {
   .blog-post-wrapper {
     padding: 2rem;
@@ -564,7 +571,7 @@ header {
     width: 100%;
   }
   .subheading-button button {
-    transform: translateX(17rem);
+    transform: translateX(0.2rem);
     font-size: 1rem;
     height: 3rem;
     width: 8rem;
@@ -595,6 +602,7 @@ header {
     width: 8rem;
   }
 }
+
 /* Blog post end */
 
 /* Footer start */
@@ -847,7 +855,7 @@ padding-bottom: 1rem;
 @media (max-width:480px){
   
 .footer-img-wrap {
-  width: 52rem;
+  width: 46rem;
   height: 20rem;
   padding: 3rem 2rem;
 }
@@ -873,13 +881,13 @@ padding-bottom: 1rem;
 }
 
 .newsLetterHead-wrap h1 {
-  font-size: 1.35rem;
+  font-size: 1rem;
 }
 
 .paraEmail-wrap p {
   font-size: 1rem;
   margin-bottom: 1rem;
-  max-width: 390px;
+  max-width: 330px;
 }
 
 .paraEmail-wrap {
@@ -906,5 +914,6 @@ padding-bottom: 1rem;
 }
 
 }
+
 
 /* Footer end */
