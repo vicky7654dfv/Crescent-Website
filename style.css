@@ -852,7 +852,7 @@ header {
   }
 
   .footer-img-wrap img {
-    width: 18.5rem;
+    width: 19.5rem;
     height: 20rem;
   }
 
@@ -872,18 +872,18 @@ header {
   }
 
   .newsLetterHead-wrap h1 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .paraEmail-wrap p {
     font-size: 1rem;
     margin-bottom: 1rem;
-    max-width: 295px;
+    max-width: 326px;
   }
 
   .paraEmail-wrap {
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
   }
 
   .contact-details {
