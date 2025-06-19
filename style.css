@@ -537,11 +537,12 @@ header {
     font-size: 1rem;
   }
   .subheading h1 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     white-space: nowrap;
+    max-width: 30%;
   }
   .subheading-para {
-    width: 100%;
+    max-width: 60%;
   }
   .subheading-button button {
     font-size: 1rem;
@@ -861,7 +862,7 @@ padding-bottom: 1rem;
 }
 
 .footer-img-wrap img {
-  width: 50%;
+  width: 23rem;
   height: 100%;
 }
 
